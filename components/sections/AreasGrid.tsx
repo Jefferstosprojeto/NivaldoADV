@@ -12,9 +12,9 @@ const areas = [
     description: "Divórcio, partilha de bens, guarda e pensão alimentícia.",
   },
   {
-    href: "/areas-de-atuacao/legalizacao-imoveis",
-    title: "Legalização de Imóveis",
-    description: "Regularização e legalização de imóveis.",
+    href: "/areas-de-atuacao/administracao-imoveis",
+    title: "Administração de Imóveis",
+    description: "Gestão jurídica de imóveis e questões patrimoniais.",
   },
 ];
 
