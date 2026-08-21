@@ -1,6 +1,6 @@
 export const siteConfig = {
-  lawyerName: "Dr. NIVALDO NASCIMENTO",
-  oab: "OAB/RJ 93.663",
+  lawyerName: "Dr. Nivaldo P. do Nascimento",
+  oab: "OAB/RJ 000.000",
   phone: "(21) 99919-5726",
   whatsappNumber: "5521999195726",
   email: "nivaldonascimento.adv@gmail.com",
