@@ -1,0 +1,30 @@
+import Link from "next/link";
+import { siteConfig } from "@/lib/site-config";
+
+const navLinks = [
+  { href: "/", label: "Início" },
+  { href: "/sobre", label: "Sobre" },
+  { href: "/areas-de-atuacao", label: "Áreas de Atuação" },
+  { href: "/simulador", label: "Simulador" },
+  { href: "/blog", label: "Blog" },
+  { href: "/contato", label: "Contato" },
+];
+
+export default function Header() {
+  return (
+    <header className="border-b border-brand-navy/10">
+      <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+        <Link href="/" className="font-serif text-xl text-brand-navy">
+          {siteConfig.lawyerName}
+        </Link>
+        <nav className="hidden md:flex gap-6 text-sm">
+          {navLinks.map((link) => (
+            <Link key={link.href} href={link.href} className="hover:text-brand-gold">
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+      </div>
+    </header>
+  );
+}

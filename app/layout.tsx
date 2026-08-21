@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/lib/site-config";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import WhatsAppButton from "@/components/layout/WhatsAppButton";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -30,7 +33,10 @@ export default function RootLayout({
       <body
         className={`${playfair.variable} ${inter.variable} font-sans bg-brand-cream text-brand-navy`}
       >
+        <Header />
         {children}
+        <WhatsAppButton />
+        <Footer />
       </body>
     </html>
   );
