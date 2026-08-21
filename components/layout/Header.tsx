@@ -19,14 +19,8 @@ export default function Header() {
   return (
     <header className="border-b border-brand-navy/10">
       <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center">
-          <Image
-            src="/images/logo.jpg"
-            alt="Logo"
-            width={60}
-            height={60}
-            className="rounded"
-          />
+        <Link href="/" className="font-serif text-xl text-brand-navy">
+          {siteConfig.lawyerName}
         </Link>
         <nav className="hidden md:flex gap-6 text-sm">
           {navLinks.map((link) => (
