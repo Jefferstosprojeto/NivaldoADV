@@ -5,6 +5,7 @@ import { siteConfig } from "@/lib/site-config";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/layout/WhatsAppButton";
+import AttorneySchema from "@/components/seo/AttorneySchema";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body
         className={`${playfair.variable} ${inter.variable} font-sans bg-brand-cream text-brand-navy`}
       >
+        <AttorneySchema />
         <Header />
         {children}
         <WhatsAppButton />
