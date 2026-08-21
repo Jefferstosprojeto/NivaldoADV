@@ -19,7 +19,9 @@ export default function Hero() {
         {siteConfig.lawyerName}
       </h1>
       <p className="text-brand-navy/80 max-w-2xl mx-auto mb-8">
-        Especialista em Inventários, Partilhas Judiciais e Extrajudiciais; Direito de Família e Legalização de Imóveis. Atendimento personalizado com eficiência, segurança, eficácia e rapidez. Tudo o que você precisa.
+        Atuação dedicada a Inventários e Sucessões, Direito de Família
+        e Administração de Imóveis, com atendimento próximo e claro em cada
+        etapa do processo.
       </p>
       <div className="flex gap-4 justify-center flex-wrap">
         <Link
@@ -27,6 +29,12 @@ export default function Hero() {
           className="rounded bg-brand-gold px-6 py-3 text-brand-navy font-medium hover:opacity-90"
         >
           Agende uma consulta
+        </Link>
+        <Link
+          href="/areas-de-atuacao"
+          className="rounded border border-brand-navy px-6 py-3 hover:bg-brand-navy hover:text-brand-cream transition-colors"
+        >
+          Áreas de atuação
         </Link>
       </div>
     </motion.section>
