@@ -36,6 +36,7 @@ export async function sendContactEmail(
       `Telefone: ${data.phone}`,
       `E-mail: ${data.email}`,
       `Área de interesse: ${data.area}`,
+      `Consentimento LGPD: aceito em ${new Date().toISOString()}`,
       "",
       data.message,
     ].join("\n"),
