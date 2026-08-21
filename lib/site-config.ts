@@ -1,5 +1,5 @@
 export const siteConfig = {
-  lawyerName: "Nivaldo Nascimento",
+  lawyerName: "Dr. Nivaldo P. do Nascimento",
   oab: "OAB/RJ 000.000",
   phone: "(21) 99919-5726",
   whatsappNumber: "5521999195726",

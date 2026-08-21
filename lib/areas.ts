@@ -60,14 +60,14 @@ export const areas = {
     ],
   },
   "administracao-imoveis": {
-    title: "Legalização de Imóveis",
+    title: "Administração de Imóveis",
     intro:
-      "Suporte jurídico especializado em legalização, regularização e gestão de imóveis, incluindo contratos e questões patrimoniais.",
+      "Suporte jurídico para questões patrimoniais e de gestão de imóveis, incluindo contratos e regularização.",
     services: [
-      "Legalização de imóveis",
-      "Regularização documental",
-      "Contratos de locação",
-      "Questões condominiais e compra/venda",
+      "Contratos de locação e administração",
+      "Regularização documental de imóveis",
+      "Questões condominiais",
+      "Assessoria em compra e venda de imóveis",
     ],
     faq: [
       {
