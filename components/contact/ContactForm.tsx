@@ -35,21 +35,36 @@ export default function ContactForm() {
       area: formData.get("area"),
       message: formData.get("message"),
       consent,
+      website: formData.get("website"),
     };
 
     setStatus("sending");
 
-    const response = await fetch("/api/contato", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-    });
+    try {
+      const response = await fetch("/api/contato", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
 
-    setStatus(response.ok ? "sent" : "error");
+      setStatus(response.ok ? "sent" : "error");
+    } catch {
+      setStatus("error");
+    }
   }
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5 max-w-lg">
+      <div className="absolute -left-[9999px]" aria-hidden="true">
+        <label htmlFor="website">Empresa</label>
+        <input
+          id="website"
+          name="website"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+        />
+      </div>
       <div>
         <label htmlFor="name" className="block text-sm font-medium mb-1">
           Nome
