@@ -21,7 +21,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: `${siteConfig.lawyerName} | Advocacia`,
   description:
-    "Advocacia especializada em Inventários e Sucessões, Direito de Família e Administração de Imóveis.",
+    "Advocacia com atuação dedicada a Inventários e Sucessões, Direito de Família e Administração de Imóveis.",
 };
 
 export default function RootLayout({

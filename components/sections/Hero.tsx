@@ -19,7 +19,7 @@ export default function Hero() {
         {siteConfig.lawyerName}
       </h1>
       <p className="text-brand-navy/80 max-w-2xl mx-auto mb-8">
-        Atuação especializada em Inventários e Sucessões, Direito de Família
+        Atuação dedicada a Inventários e Sucessões, Direito de Família
         e Administração de Imóveis, com atendimento próximo e claro em cada
         etapa do processo.
       </p>
