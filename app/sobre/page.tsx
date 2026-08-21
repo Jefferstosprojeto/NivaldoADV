@@ -9,6 +9,7 @@ export default function SobrePage() {
         alt={siteConfig.lawyerName}
         width={200}
         height={200}
+        priority
         className="rounded-lg object-cover"
       />
       <div>
