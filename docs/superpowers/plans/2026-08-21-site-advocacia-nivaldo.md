@@ -1754,6 +1754,7 @@ Create `components/contact/ContactForm.tsx`:
 "use client";
 
 import { useState, type FormEvent } from "react";
+import Link from "next/link";
 
 const areaOptions = [
   "Inventários e Sucessões",
@@ -1875,8 +1876,13 @@ export default function ContactForm() {
               if (event.target.checked) setConsentError(false);
             }}
           />
-          Li e aceito a Política de Privacidade e autorizo o uso dos meus
-          dados para retorno de contato.
+          <span>
+            Li e aceito a{" "}
+            <Link href="/privacidade" className="underline" target="_blank">
+              Política de Privacidade
+            </Link>{" "}
+            e autorizo o uso dos meus dados para retorno de contato.
+          </span>
         </label>
         {consentError && (
           <p className="text-red-600 text-sm mt-1">
