@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 
@@ -11,6 +14,8 @@ const navLinks = [
 ];
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="border-b border-brand-navy/10">
       <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -24,7 +29,34 @@ export default function Header() {
             </Link>
           ))}
         </nav>
+        <button
+          type="button"
+          className="md:hidden flex flex-col gap-1.5 p-2"
+          aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
+          aria-expanded={isOpen}
+          onClick={() => setIsOpen((open) => !open)}
+        >
+          <span className="block h-0.5 w-6 bg-brand-navy" />
+          <span className="block h-0.5 w-6 bg-brand-navy" />
+          <span className="block h-0.5 w-6 bg-brand-navy" />
+        </button>
       </div>
+      {isOpen && (
+        <div className="md:hidden bg-brand-cream border-t border-brand-navy/10">
+          <nav className="flex flex-col px-6 py-4 gap-4 text-sm">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="hover:text-brand-gold"
+                onClick={() => setIsOpen(false)}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
+      )}
     </header>
   );
 }
