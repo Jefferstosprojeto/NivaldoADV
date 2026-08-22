@@ -1,5 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts } from "@/lib/blog";
+
+export const metadata: Metadata = {
+  title: "Blog Jurídico",
+  description:
+    "Artigos sobre Inventários e Sucessões, Direito de Família e Legalização de Imóveis para quem busca entender seus direitos e o passo a passo legal.",
+  alternates: {
+    canonical: "/blog",
+  },
+};
 
 export default function BlogIndexPage() {
   const posts = getAllPosts();

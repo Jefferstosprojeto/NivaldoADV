@@ -3,6 +3,7 @@ import { siteConfig } from "./site-config";
 
 describe("siteConfig", () => {
   it("has the lawyer's contact info", () => {
+    expect(siteConfig.siteUrl).toBe("https://nivaldoadv.vercel.app");
     expect(siteConfig.lawyerName).toBe("Dr. Nivaldo Nascimento");
     expect(siteConfig.phone).toBe("(21) 99919-5726");
     expect(siteConfig.whatsappNumber).toBe("5521999195726");

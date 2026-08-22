@@ -1,5 +1,14 @@
+import type { Metadata } from "next";
 import ContactForm from "@/components/contact/ContactForm";
 import { siteConfig } from "@/lib/site-config";
+
+export const metadata: Metadata = {
+  title: "Contato",
+  description: `Agende uma consulta com ${siteConfig.lawyerName} em ${siteConfig.city}/${siteConfig.state}. Telefone, e-mail e formulário de contato.`,
+  alternates: {
+    canonical: "/contato",
+  },
+};
 
 export default function ContatoPage() {
   return (

@@ -18,10 +18,52 @@ const inter = Inter({
   weight: ["400", "500", "600"],
 });
 
+const defaultDescription =
+  "Advocacia com atuação dedicada a Inventários e Sucessões, Direito de Família e Legalização de Imóveis em Rio de Janeiro/RJ.";
+
 export const metadata: Metadata = {
-  title: `${siteConfig.lawyerName} | Advocacia`,
-  description:
-    "Advocacia com atuação dedicada a Inventários e Sucessões, Direito de Família e Legalização de Imóveis.",
+  metadataBase: new URL(siteConfig.siteUrl),
+  title: {
+    default: `${siteConfig.lawyerName} | Advocacia`,
+    template: `%s | ${siteConfig.lawyerName}`,
+  },
+  description: defaultDescription,
+  keywords: [
+    "advogado inventário Rio de Janeiro",
+    "inventário extrajudicial",
+    "direito de família",
+    "legalização de imóveis",
+    "advogado sucessões RJ",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: "/",
+    siteName: `${siteConfig.lawyerName} | Advocacia`,
+    title: `${siteConfig.lawyerName} | Advocacia`,
+    description: defaultDescription,
+    images: [
+      {
+        url: "/images/logo.jpg",
+        width: 1366,
+        height: 1366,
+        alt: siteConfig.lawyerName,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteConfig.lawyerName} | Advocacia`,
+    description: defaultDescription,
+    images: ["/images/logo.jpg"],
+  },
 };
 
 export default function RootLayout({

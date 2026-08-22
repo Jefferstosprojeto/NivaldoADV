@@ -1,4 +1,18 @@
+import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
+
+export const metadata: Metadata = {
+  title: "Política de Privacidade",
+  description:
+    "Política de Privacidade e tratamento de dados pessoais em conformidade com a LGPD (Lei nº 13.709/2018).",
+  alternates: {
+    canonical: "/privacidade",
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
+};
 
 export default function PrivacidadePage() {
   return (

@@ -1,5 +1,14 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { siteConfig } from "@/lib/site-config";
+
+export const metadata: Metadata = {
+  title: "Sobre",
+  description: `Conheça ${siteConfig.lawyerName} (${siteConfig.oab}), advogado especializado em Inventários e Sucessões, Direito de Família e Legalização de Imóveis em ${siteConfig.city}/${siteConfig.state}.`,
+  alternates: {
+    canonical: "/sobre",
+  },
+};
 
 export default function SobrePage() {
   return (
