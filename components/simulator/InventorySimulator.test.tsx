@@ -8,14 +8,17 @@ describe("InventorySimulator", () => {
     const user = userEvent.setup();
     render(<InventorySimulator />);
 
-    // Questions render in order: hasAssets, hasWill, heirsAgree — each with
-    // its own "Sim"/"Não" button pair, so index N corresponds to question N.
+    // Questions render in order: hasAssets, hasWill, heirsAgree,
+    // hasMinorOrIncapableHeirs, hasDebts — each with its own "Sim"/"Não"
+    // button pair, so index N corresponds to question N.
     const simButtons = screen.getAllByRole("button", { name: /^sim$/i });
     const naoButtons = screen.getAllByRole("button", { name: /^n[ãa]o$/i });
 
     await user.click(simButtons[0]); // Há bens a inventariar? -> Sim
     await user.click(naoButtons[1]); // Há testamento? -> Não
     await user.click(simButtons[2]); // Herdeiros concordam? -> Sim
+    await user.click(naoButtons[3]); // Herdeiro menor/incapaz? -> Não
+    await user.click(naoButtons[4]); // Dívidas do espólio? -> Não
 
     expect(screen.getByText((content, element) => (element?.className.includes('font-serif') && /inventário extrajudicial/i.test(content)) || false)).toBeInTheDocument();
     expect(screen.getByText(/não substitui uma consulta jurídica/i)).toBeInTheDocument();

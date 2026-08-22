@@ -13,7 +13,7 @@ describe("AreasGrid", () => {
       "href",
       "/areas-de-atuacao/familia"
     );
-    expect(screen.getByRole("link", { name: /administra[çc][ãa]o de im[óo]veis/i })).toHaveAttribute(
+    expect(screen.getByRole("link", { name: /legaliza[çc][ãa]o de im[óo]veis/i })).toHaveAttribute(
       "href",
       "/areas-de-atuacao/administracao-imoveis"
     );

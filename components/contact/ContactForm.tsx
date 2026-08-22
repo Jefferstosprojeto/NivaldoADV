@@ -6,7 +6,7 @@ import Link from "next/link";
 const areaOptions = [
   "Inventários e Sucessões",
   "Direito de Família",
-  "Administração de Imóveis",
+  "Legalização de Imóveis",
   "Outro assunto",
 ];
 

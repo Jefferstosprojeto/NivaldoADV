@@ -60,7 +60,7 @@ export const areas = {
     ],
   },
   "administracao-imoveis": {
-    title: "Administração de Imóveis",
+    title: "Legalização de Imóveis",
     intro:
       "Suporte jurídico para questões patrimoniais e de gestão de imóveis, incluindo contratos e regularização.",
     services: [

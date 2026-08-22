@@ -12,7 +12,7 @@ describe("AttorneySchema", () => {
 
     const json = JSON.parse(script!.textContent ?? "{}");
     expect(json["@type"]).toBe("Attorney");
-    expect(json.name).toBe("Dr. Nivaldo P. do Nascimento");
+    expect(json.name).toBe("Dr. Nivaldo Nascimento");
     expect(json.address.addressLocality).toBe("Rio de Janeiro");
     expect(json.address.addressRegion).toBe("RJ");
   });

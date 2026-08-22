@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { siteConfig } from "@/lib/site-config";
 
 const navLinks = [
@@ -17,12 +18,19 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="border-b border-brand-navy/10">
-      <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="font-serif text-xl text-brand-navy">
-          {siteConfig.lawyerName}
+    <header className="bg-brand-navy border-b border-brand-gold/20">
+      <div className="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between">
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/images/logo-icon.png"
+            alt={siteConfig.lawyerName}
+            width={190}
+            height={85}
+            priority
+            className="h-12 w-auto md:h-14"
+          />
         </Link>
-        <nav className="hidden md:flex gap-6 text-sm">
+        <nav className="hidden md:flex gap-6 text-sm text-brand-cream">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href} className="hover:text-brand-gold">
               {link.label}
@@ -36,14 +44,14 @@ export default function Header() {
           aria-expanded={isOpen}
           onClick={() => setIsOpen((open) => !open)}
         >
-          <span className="block h-0.5 w-6 bg-brand-navy" />
-          <span className="block h-0.5 w-6 bg-brand-navy" />
-          <span className="block h-0.5 w-6 bg-brand-navy" />
+          <span className="block h-0.5 w-6 bg-brand-gold" />
+          <span className="block h-0.5 w-6 bg-brand-gold" />
+          <span className="block h-0.5 w-6 bg-brand-gold" />
         </button>
       </div>
       {isOpen && (
-        <div className="md:hidden bg-brand-cream border-t border-brand-navy/10">
-          <nav className="flex flex-col px-6 py-4 gap-4 text-sm">
+        <div className="md:hidden bg-brand-navy border-t border-brand-gold/20">
+          <nav className="flex flex-col px-6 py-4 gap-4 text-sm text-brand-cream">
             {navLinks.map((link) => (
               <Link
                 key={link.href}

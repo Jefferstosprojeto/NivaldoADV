@@ -13,15 +13,19 @@ const questions: {
   { key: "hasAssets", label: "Há bens a inventariar?" },
   { key: "hasWill", label: "Há testamento?" },
   { key: "heirsAgree", label: "Todos os herdeiros concordam com a partilha?" },
+  {
+    key: "hasMinorOrIncapableHeirs",
+    label: "Há herdeiro menor de idade ou incapaz?",
+  },
+  { key: "hasDebts", label: "O espólio possui dívidas ou pendências fiscais?" },
 ];
 
 export default function InventorySimulator() {
   const [answers, setAnswers] = useState<Partial<InventoryAnswers>>({});
 
-  const allAnswered =
-    answers.hasAssets !== undefined &&
-    answers.hasWill !== undefined &&
-    answers.heirsAgree !== undefined;
+  const allAnswered = questions.every(
+    (question) => answers[question.key] !== undefined
+  );
 
   const result = allAnswered
     ? estimateInventoryDuration(answers as InventoryAnswers)

@@ -17,7 +17,7 @@ export default function SobrePage() {
         <p className="text-brand-gold mb-4">{siteConfig.oab}</p>
         <p className="text-brand-navy/80 mb-4">
           Advogado com atuação dedicada a Inventários e Sucessões, Direito de
-          Família e Administração de Imóveis, buscando conduzir cada processo
+          Família e Legalização de Imóveis, buscando conduzir cada processo
           com clareza e atenção próxima às necessidades do cliente.
         </p>
         <p className="text-brand-navy/80">

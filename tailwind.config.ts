@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "brand-navy": "#0F2A3F",
+        "brand-navy": "#0A1845",
         "brand-gold": "#B8935F",
         "brand-cream": "#FAF8F5",
       },

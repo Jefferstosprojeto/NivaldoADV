@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-brand-navy text-brand-cream mt-24">
       <div className="max-w-5xl mx-auto px-6 py-10 grid gap-6 md:grid-cols-3 text-sm">
         <div>
-          <p className="font-serif text-lg">{siteConfig.lawyerName}</p>
+          <p className="font-serif text-lg text-brand-gold">{siteConfig.lawyerName}</p>
           <p className="opacity-80 mt-1">{siteConfig.oab}</p>
         </div>
         <div>
