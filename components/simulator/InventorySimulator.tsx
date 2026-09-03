@@ -17,6 +17,11 @@ const questions: {
     key: "hasMinorOrIncapableHeirs",
     label: "Há herdeiro menor de idade ou incapaz?",
   },
+  {
+    key: "isPartitionEqual",
+    label:
+      "Caso haja herdeiro menor ou incapaz, a partilha será igualitária entre eles?",
+  },
   { key: "hasDebts", label: "O espólio possui dívidas ou pendências fiscais?" },
 ];
 

@@ -22,12 +22,12 @@ export const areas = {
       {
         question: "Quanto tempo demora um inventário?",
         answer:
-          "Varia conforme o caso: um inventário extrajudicial, quando cabível, pode levar de 1 a 3 meses; um inventário judicial costuma levar entre 8 e 24 meses.",
+          "O tempo é relativo e depende da análise do conjunto de bens, da complexidade do inventário, da escolha correta do rito, da inexistência de conflitos e disputas entre herdeiros, e se o processo é judicial ou extrajudicial (em cartório).",
       },
       {
-        question: "Inventário extrajudicial é possível no meu caso?",
+        question: "Quais são os casos possíveis de inventário extrajudicial?",
         answer:
-          "É possível quando não há testamento e todos os herdeiros são maiores, capazes e estão de acordo com a partilha. Cada caso deve ser avaliado individualmente.",
+          "Hoje é possível realizar o inventário extrajudicial mesmo havendo herdeiros menores de idade ou incapazes, desde que haja partilha igualitária entre eles, e mesmo quando existe testamento. Não há limite de valor dos bens, nem é exigido o pagamento do imposto (ITCMD) no início do processo — é necessário apenas que haja consenso entre todos os herdeiros.",
       },
       {
         question: "Preciso de advogado para partilha de bens?",

@@ -4,10 +4,27 @@ date: "2026-08-01"
 excerpt: "Entenda os requisitos para realizar o inventário em cartório, sem passar pelo processo judicial."
 ---
 
-O inventário extrajudicial pode ser feito em cartório quando não há
-testamento e todos os herdeiros são maiores, capazes e estão de acordo com
-os termos da partilha. É um caminho geralmente mais rápido que o inventário
-judicial, mas exige assistência de um advogado em todas as etapas.
+O inventário extrajudicial é uma forma prática e rápida de realizar e
+regularizar a partilha dos bens deixados por um familiar falecido, feita
+diretamente em cartório de notas, sem a demora de um processo judicial.
+
+Para que ele possa ser feito, a lei exige a presença de um advogado e o
+acordo total entre os herdeiros — ou seja, todos precisam concordar sobre
+como os bens serão divididos.
+
+Além disso, regras recentes do CNJ (Conselho Nacional de Justiça)
+facilitaram bastante esse caminho:
+
+- **Menores ou incapazes**: agora o inventário pode ser feito em cartório
+mesmo com herdeiros menores de idade, desde que a divisão dos bens respeite
+rigorosamente a cota de cada um.
+- **Existência de testamento**: a existência de um testamento não impede
+mais a via em cartório, tornando o procedimento muito mais simples e
+rápido.
+- **Pagamento do imposto (ITCMD)**: não é mais obrigatório quitar o imposto
+antes de dar início ao processo em cartório. Isso ajuda diretamente as
+famílias que herdaram bens (como casas, apartamentos, carros ou terrenos),
+mas não têm dinheiro em mãos logo no início para pagar os tributos.
 
 Cada caso tem particularidades que podem afastar essa possibilidade — por
 isso, uma avaliação individual é sempre recomendada antes de decidir o

@@ -6,6 +6,7 @@ const baseAnswers = {
   hasAssets: true,
   heirsAgree: true,
   hasMinorOrIncapableHeirs: false,
+  isPartitionEqual: true,
   hasDebts: false,
 };
 
@@ -27,14 +28,14 @@ describe("estimateInventoryDuration", () => {
     expect(result.maxMonths).toBe(3);
   });
 
-  it("suggests judicial inventory with a longer estimate when there's a will", () => {
+  it("still suggests extrajudicial inventory when there's a will, since recent CNJ rules allow it", () => {
     const result = estimateInventoryDuration({
       ...baseAnswers,
       hasWill: true,
     });
-    expect(result.isExtrajudicial).toBe(false);
-    expect(result.minMonths).toBe(8);
-    expect(result.maxMonths).toBe(24);
+    expect(result.isExtrajudicial).toBe(true);
+    expect(result.minMonths).toBe(1);
+    expect(result.maxMonths).toBe(3);
   });
 
   it("suggests judicial inventory when heirs disagree, even without a will", () => {
@@ -47,10 +48,22 @@ describe("estimateInventoryDuration", () => {
     expect(result.maxMonths).toBe(24);
   });
 
-  it("forces judicial inventory with a longer estimate when there are minor or incapable heirs, even without a will and with agreement", () => {
+  it("still suggests extrajudicial inventory with minor or incapable heirs when the partition is equal", () => {
     const result = estimateInventoryDuration({
       ...baseAnswers,
       hasMinorOrIncapableHeirs: true,
+      isPartitionEqual: true,
+    });
+    expect(result.isExtrajudicial).toBe(true);
+    expect(result.minMonths).toBe(1);
+    expect(result.maxMonths).toBe(3);
+  });
+
+  it("forces judicial inventory with a longer estimate when minor or incapable heirs have an unequal partition", () => {
+    const result = estimateInventoryDuration({
+      ...baseAnswers,
+      hasMinorOrIncapableHeirs: true,
+      isPartitionEqual: false,
     });
     expect(result.isExtrajudicial).toBe(false);
     expect(result.minMonths).toBe(10);
@@ -68,10 +81,10 @@ describe("estimateInventoryDuration", () => {
     expect(result.maxMonths).toBe(4);
   });
 
-  it("extends the judicial estimate when the estate has debts", () => {
+  it("extends the judicial estimate when heirs disagree and the estate has debts", () => {
     const result = estimateInventoryDuration({
       ...baseAnswers,
-      hasWill: true,
+      heirsAgree: false,
       hasDebts: true,
     });
     expect(result.isExtrajudicial).toBe(false);
