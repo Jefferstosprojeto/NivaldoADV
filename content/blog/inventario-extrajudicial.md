@@ -29,3 +29,9 @@ mas não têm dinheiro em mãos logo no início para pagar os tributos.
 Cada caso tem particularidades que podem afastar essa possibilidade — por
 isso, uma avaliação individual é sempre recomendada antes de decidir o
 caminho a seguir.
+
+Quer saber mais e se inteirar sobre os seus direitos e as soluções
+jurídicas para resolver o seu inventário, os litígios e demandas entre
+herdeiros, organizar seu patrimônio e legalizar seus bens imóveis? Visite
+o blog do Dr. Nivaldo Nascimento:
+[contrajur-contratosjuridicos.blogspot.com](https://www.contrajur-contratosjuridicos.blogspot.com).
