@@ -28,7 +28,7 @@ export async function sendContactEmail(
 
   await transporter.sendMail({
     from: process.env.SMTP_USER,
-    to: siteConfig.contactInboxEmail,
+    to: siteConfig.email,
     replyTo: data.email,
     subject: `Novo contato pelo site — ${data.name}`,
     text: [

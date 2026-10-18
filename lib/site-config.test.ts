@@ -7,8 +7,7 @@ describe("siteConfig", () => {
     expect(siteConfig.lawyerName).toBe("Dr. Nivaldo Nascimento");
     expect(siteConfig.phone).toBe("(21) 99919-5726");
     expect(siteConfig.whatsappNumber).toBe("5521999195726");
-    expect(siteConfig.email).toBe("contato@nivaldonascimento.adv.br");
-    expect(siteConfig.contactInboxEmail).toBe("nivaldonascimento.adv@gmail.com");
+    expect(siteConfig.email).toBe("nivaldonascimento.adv@gmail.com");
     expect(siteConfig.oab).toBe("OAB/RJ 93.663");
     expect(siteConfig.city).toBe("Rio de Janeiro");
     expect(siteConfig.state).toBe("RJ");
