@@ -18,10 +18,11 @@ export default function Hero() {
         {siteConfig.lawyerName}
       </h1>
       <p className="text-brand-navy/80 max-w-2xl mx-auto">
-        Especialista em Inventários, Partilhas de Bens Judiciais e
-        Extrajudiciais; Direito de Família e Legalização de Imóveis.
-        Atendimento personalizado com eficiência, segurança, eficácia e
-        rapidez. Tudo o que você precisa.
+        Especialista com atuação jurídica em inventários judiciais e
+        extrajudiciais (em cartório), partilha de bens, direito de herdeiros
+        e do cônjuge sobrevivente, cálculo e pagamento do imposto do
+        inventário, legalização e regularização dos bens imóveis irregulares
+        e questões do Direito de Família.
       </p>
     </motion.section>
   );

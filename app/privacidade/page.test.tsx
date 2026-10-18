@@ -8,6 +8,6 @@ describe("PrivacidadePage", () => {
     expect(
       screen.getByRole("heading", { name: /pol[íi]tica de privacidade/i })
     ).toBeInTheDocument();
-    expect(screen.getByText(/nivaldonascimento\.adv@gmail\.com/)).toBeInTheDocument();
+    expect(screen.getByText(/contato@nivaldonascimento\.adv\.br/)).toBeInTheDocument();
   });
 });
