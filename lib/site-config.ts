@@ -1,5 +1,5 @@
 export const siteConfig = {
-  siteUrl: "https://nivaldoadv.vercel.app",
+  siteUrl: "https://www.nivaldonascimento.adv.br",
   lawyerName: "Dr. Nivaldo Nascimento",
   oab: "OAB/RJ 93.663",
   phone: "(21) 99919-5726",
